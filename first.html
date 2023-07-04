@@ -1,0 +1,80 @@
+//Static:
+The position: static; is the default position value. Elements with position: static; are positioned according to the normal document flow.//
+<style>
+  .box {
+    position: static;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+</style>
+
+<div class="box">Static</div>
+//Relative:
+The position: relative; positions an element relative to its normal position in the document flow.//
+<style>
+  .box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+</style>
+
+<div class="box">Relative</div>
+//Absolute:
+The position: absolute; removes an element from the normal document flow and positions it relative to its closest positioned ancestor.
+//
+<style>
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: light gray;
+  }
+  
+  .box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+</style>
+
+<div class="container">
+  <div class="box">Absolute</div>
+</div>
+//Fixed:
+The position: fixed; positions an element relative to the browser window, and it remains fixed in its position even when the page is scrolled.//
+<style>
+  .box {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+  }
+</style>
+
+<div class="box">Fixed</div>
+//Sticky:
+The position: sticky; positions an element based on the user's scroll position. It behaves as position: relative; until a specific threshold is
+reached, then becomes position: fixed;//
+<style>
+  .box {
+    position: sticky;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+  }
+</style>
+
+<div class="box">Sticky</div>
+
+
